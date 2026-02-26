@@ -3,7 +3,7 @@ import axios from 'axios';
 import TeacherCard from '../components/TeacherCard';
 import './Courses.css';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://yigitsacademysite-production.up.railway.app/api';
 
 export default function Teachers() {
   const [teachers, setTeachers] = useState([]);
