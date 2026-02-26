@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './Footer.css';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://yigitsacademysite-production.up.railway.app/api';
 
 export default function Footer() {
   const [s, setS] = useState({
