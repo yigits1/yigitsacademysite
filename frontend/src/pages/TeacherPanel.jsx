@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import './AdminPanel.css';
 import './TeacherPanel.css';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://yigitsacademysite-production.up.railway.app/api';
 
 function Modal({ title, onClose, children }) {
   return (
