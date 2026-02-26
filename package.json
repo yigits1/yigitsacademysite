@@ -1,0 +1,9 @@
+{
+  "name": "yigits-akademi",
+  "version": "1.0.0",
+  "scripts": {
+    "backend": "node backend/server.js",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "start cmd /k \"node backend/server.js\" && cd frontend && npm run dev"
+  }
+}

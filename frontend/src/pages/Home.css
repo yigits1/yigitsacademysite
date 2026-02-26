@@ -1,0 +1,136 @@
+.hero {
+  position: relative;
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #003580 0%, #0056b3 50%, #007BFF 100%);
+  color: var(--white);
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 80% 50%, rgba(255,107,0,0.15) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  position: relative;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--white);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+.hero-text h1 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+.hero-highlight { color: var(--orange); }
+.hero-sub { font-size: 1.05rem; opacity: 0.9; max-width: 440px; margin-bottom: 32px; line-height: 1.7; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 44px; }
+.btn-lg { padding: 14px 32px; font-size: 16px; }
+.btn-outline-white {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 6px;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition), border-color var(--transition);
+}
+.btn-outline-white:hover { background: rgba(255,255,255,0.15); border-color: var(--white); }
+.hero-stats { display: flex; gap: 36px; }
+.stat { display: flex; flex-direction: column; }
+.stat strong { font-size: 1.6rem; font-weight: 800; color: var(--orange); }
+.stat span { font-size: 12px; opacity: 0.8; }
+.hero-image img {
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  width: 100%;
+  object-fit: cover;
+  height: 380px;
+}
+
+.features-section { background: var(--white); }
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+.feature-card {
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--gray-200);
+  transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.feature-card:hover { border-color: var(--blue); box-shadow: var(--shadow); transform: translateY(-3px); }
+.feature-icon { font-size: 2.4rem; margin-bottom: 14px; }
+.feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
+.feature-card p { color: var(--gray-600); font-size: 13.5px; }
+
+.bg-gray { background: var(--gray-50); }
+
+.section-header { margin-bottom: 44px; }
+.section-header .section-sub { margin-bottom: 0; }
+
+.cta-section {
+  background: linear-gradient(135deg, var(--orange), #ff8c00);
+  padding: 72px 0;
+  color: var(--white);
+  text-align: center;
+}
+.cta-inner h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 12px; }
+.cta-inner p { font-size: 1.05rem; opacity: 0.9; margin-bottom: 32px; }
+.cta-inner .btn-orange { background: var(--white); color: var(--orange); }
+.cta-inner .btn-orange:hover { background: var(--gray-100); }
+
+.level-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.level-option {
+  padding: 12px 16px;
+  border: 1.5px solid var(--gray-400);
+  border-radius: 8px;
+  background: var(--white);
+  font-size: 14px;
+  text-align: left;
+  transition: all var(--transition);
+}
+.level-option:hover { border-color: var(--blue); background: #e8f0fe; color: var(--blue); }
+
+.score-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--blue), var(--orange));
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero-content { grid-template-columns: 1fr; gap: 32px; }
+  .hero-image { display: none; }
+  .hero-stats { gap: 20px; }
+  .level-options { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,71 @@
+.teacher-info-box {
+  padding: 14px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.teacher-welcome { font-size: 11px; opacity: 0.6; text-transform: uppercase; letter-spacing: 0.5px; }
+.teacher-name-display { font-size: 14px; font-weight: 700; color: var(--white); }
+.course-selector-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--white);
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.attendance-list { display: flex; flex-direction: column; gap: 10px; max-width: 480px; }
+.attend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--white);
+  border-radius: 8px;
+  border: 1.5px solid var(--gray-200);
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.attend-item:hover { border-color: var(--blue); }
+.attend-item input { width: auto; }
+.attend-name { flex: 1; font-weight: 500; }
+.attend-badge {
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.present { background: #d1e7dd; color: #0a3622; }
+.absent { background: #f8d7da; color: #58151c; }
+
+.grade-form {
+  background: var(--white);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 480px;
+  margin-bottom: 24px;
+}
+
+.grade-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.grade-pill.pass { background: #d1e7dd; color: #0a3622; }
+.grade-pill.fail { background: #f8d7da; color: #58151c; }
+
+.history-block { margin-bottom: 24px; }
+.history-date {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  background: #e8f0fe;
+  border-radius: 6px;
+  display: inline-block;
+}

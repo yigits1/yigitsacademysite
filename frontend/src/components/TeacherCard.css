@@ -1,0 +1,7 @@
+.teacher-card { text-align: center; }
+.teacher-img-wrap { width: 100px; height: 100px; border-radius: 50%; overflow: hidden; margin: 24px auto 16px; border: 3px solid var(--blue); }
+.teacher-img { width: 100%; height: 100%; object-fit: cover; }
+.teacher-body { padding: 0 20px 24px; }
+.teacher-name { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+.teacher-spec { margin-bottom: 12px; display: inline-block; }
+.teacher-bio { color: var(--gray-600); font-size: 13.5px; line-height: 1.6; }
