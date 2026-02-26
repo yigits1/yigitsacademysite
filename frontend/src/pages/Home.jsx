@@ -5,7 +5,7 @@ import CourseCard from '../components/CourseCard';
 import TeacherCard from '../components/TeacherCard';
 import './Home.css';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://yigitsacademysite-production.up.railway.app/api';
 
 const COURSE_IMAGES = {
   general: 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=600&q=80',
