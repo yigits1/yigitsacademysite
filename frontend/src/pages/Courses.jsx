@@ -3,7 +3,7 @@ import axios from 'axios';
 import CourseCard from '../components/CourseCard';
 import './Courses.css';
 
-const API = https://yigitsacademysite-production.up.railway.app/api';
+const API = 'https://yigitsacademysite-production.up.railway.app/api';
 
 export default function Courses() {
   const [courses, setCourses] = useState([]);
