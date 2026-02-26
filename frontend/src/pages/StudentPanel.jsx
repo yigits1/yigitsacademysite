@@ -5,7 +5,7 @@ import './AdminPanel.css';
 import './TeacherPanel.css';
 import './StudentPanel.css';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://yigitsacademysite-production.up.railway.app/api';
 
 const MODULES = [
   { key: 'courses',      label: 'Kurs ve Paketler',   desc: 'Kayıtlı kurs ve sözleşme detayları',  icon: '🏳️',  color: '#22c55e' },
