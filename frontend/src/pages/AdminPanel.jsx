@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './AdminPanel.css';
 
-const API = 'http://localhost:5000/api';
+const API = 'https://yigitsacademysite-production.up.railway.app/api';
 
 function Modal({ title, onClose, children }) {
   return (
